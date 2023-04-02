@@ -8,12 +8,12 @@ app.get("/home", (request, response, next) => {
   response.sendFile(__dirname + "/views/home-page.html");
 });
 
-app.get("/about", (req, res, next) => {
+app.get("/about", (req, response, next) => {
   response.sendFile(__dirname + "/views/about-page.html");
 });
 
-app.get("/works", (req, res, next) => {
+app.get("/works", (req, response, next) => {
   response.sendFile(__dirname + "/views/works-page.html");
 });
 
-app.listen(3000, () => console.log('My first app listening on port 3000!'));
+app.listen(3000, () => console.log("My first app listening on port 3000!"));
